@@ -10,16 +10,18 @@ html {
 #game {
     width:400px;
     height:500px;
-    border:1px solid black;
     margin: auto;
     overflow: hidden;
     background-image: url('./images/board2.jpg') ;
     background-size: 400px 500px;
-
-
-    
-    
+ 
 }
+
+@media screen and (max-width: 500px) {
+    #game {
+      width: 100vh;
+    }
+  }
 
 #block {
     width:50px;
@@ -78,10 +80,19 @@ html {
     font-size: 2rem;
     color:blanchedalmond;
     padding-bottom: 1rem;
-    border-bottom: 0.5rem solid blanchedalmond;
-
-    
+    border-bottom: 0.5rem solid blanchedalmond;    
 }
+
+
+@media screen and (max-width: 500px) {
+    .accueil__boutton {
+      font-size: 0.8rem;
+      border-bottom: 0.2rem solid blanchedalmond; 
+      text-decoration: none;   
+
+    }
+  }
+
 
 .accueil__perso {
     display : flex;
